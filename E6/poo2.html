@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+
+    //criando array
+    /*
+    let cadeiras = Array()
+
+    cadeiras[0] = Array()
+    cadeiras[0]['qtd_pernas'] = 4
+    cadeiras[0]['giratoria'] = false
+    cadeiras[0]['cor'] = 'azul'
+
+    cadeiras[1] = Array()
+    cadeiras[1]['qtd_pernas'] = 4
+    cadeiras[1]['giratoria'] = true
+    cadeiras[1]['cor'] = 'marrom'
+
+
+    function girar_cadeira (indice){
+      if(cadeiras[indice]['giratoria'] === true){
+        console.log('girou')
+      } else {
+        console.log('cadeira nao e giratoria')
+      }
+
+    }
+
+    function adicionar_cadeira(qtd_pernas, giratoria,cor){
+      let cadeira = Array()
+
+      cadeira['qtd_pernas'] = qtd_pernas
+      cadeira['giratoria'] = giratoria
+      cadeira['cor'] = cor
+
+      cadeiras.push(cadeira)
+
+    }
+
+    adicionar_cadeira(3,false, 'verde')
+    console.log(cadeiras)
+    girar_cadeira(1)
+    */
+
+    //criando paradigma
+
+    class Cadeira {
+      constructor(qtd_pernas,giratoria,cor){
+        this.qtd_pernas = qtd_pernas
+        this.giratoria = giratoria
+        this.cor = cor
+      }
+
+      girarCadeira() {
+
+        if(this.giratoria === true){
+          console.log('girou')
+
+        }else {
+          console.log('Cadeira nao e giratoria')
+        }
+      }
+    }
+
+    let cadeira = new Cadeira(4, true, 'azul')
+    let cadeira2 = new Cadeira(2, false, 'marrom')
+    cadeira.girarCadeira()
+    cadeira2.girarCadeira()
+
+  </script>
+
+</head>
+<body>
+  
+</body>
+</html>

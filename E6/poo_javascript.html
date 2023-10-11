@@ -20,8 +20,34 @@
 
       }
 
+      depositar(valorDeposito){
+        this.saldo += valorDeposito
+      }
+
+      sacar(valorSaque) {
+        this.saldo -= valorSaque
+
+      }
+
+      consultarSaldo(){
+        return this.saldo
+
+
+      }
+
 
     }
+
+
+    let x = new ContaBancaria()
+    let y = new ContaBancaria()
+
+
+    console.log(x.consultarSaldo())
+    x.depositar(450)
+    console.log(x.consultarSaldo())
+    x.sacar(300)
+    console.log(x.consultarSaldo())
 
 
 
