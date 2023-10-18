@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POO 4 Herança</title>
+  <script>
+
+    class Animal {
+      constructor(){
+        this.cor = ''
+        this.tamanho = null
+      }
+
+      dormir(){
+        console.log('Dormir')
+      }
+    }
+
+    class Cachorro extends Animal { 
+      constructor(){
+        super()
+        this.orelhas = "Grandes e caidas"
+      }
+
+
+    correr(){
+     console.log("Correr") 
+    }
+
+    
+    rosnar(){
+      console.log("rosnar")
+    }
+    }
+
+   
+
+    class Passaro extends Animal {
+      constructor(){
+        super()
+        this.bico = 'Curto'
+      }
+
+
+      voar(){
+      console.log("voar")
+    }
+    }
+
+    class Papagaio extends Passaro {
+      constructor(){
+        super()
+        this.sabeFalar = true
+      }
+
+    }
+
+  
+
+    
+
+    let cachorro1 = new Cachorro()
+    let passaro1 = new Passaro()
+    let papagaio1 = new Papagaio()
+
+    console.log(papagaio1)
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
