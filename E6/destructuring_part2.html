@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destrucuturing PART 2</title>
+  <script>
+    let produto = {
+      descricao: 'Notebook',
+      preco:1080,
+      detalhe: {
+        fabricante:'abc',
+        modelo: 'xyz'
+      }
+    }
+
+    //let { descricao, preco} = produto
+
+    let {descricao: d , preco: p} = produto
+    console.log(d, p)
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
